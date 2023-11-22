@@ -1,0 +1,98 @@
+
+
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title>
+      <img src="assets/logoWide.png" class="logo">
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" class="menuButton"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="openCart()" #cart>
+        <div class="cart-length">{{ cartItemCount | async }}</div>
+        <ion-icon name="cart" class="cart-icon" style="font-size:30px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="person-circle" style="font-size:30px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="parent">
+  <ion-slides pager="true" [options] ="{autoplay:true}" class="product-slider">
+    <ion-slide>
+      <img src="assets/banner1.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/banner21.png" >
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/banner3.png" >
+    </ion-slide>
+    
+  </ion-slides>
+
+  <ion-searchbar animated placeholder="Search"></ion-searchbar> 
+
+  <div class="container">
+     
+    <ion-grid class="grid" >
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            
+            
+               <p>Featured products</p>
+          
+              
+            <ion-card *ngFor="let p of products"  >
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img  src="{{ p.image }}"/>
+              </ion-thumbnail>
+
+              <ion-label>
+                <h2>{{ p.name }}<span style="float:right; color:green; font-size: 15px;"> ₱{{ p.price }}</span></h2>
+                <h3>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                 
+                  <ion-icon name="star"></ion-icon>
+                </h3>
+                <div id="qty">
+               
+                 <span class="minus" (click)="subtract(p)"> -&nbsp;&nbsp; </span> <span class="quantity">{{ p.addAmount }}</span>
+                   <span class="plus" (click)="add(p)"> &nbsp;&nbsp;+ </span>
+                
+
+                  <span style="float:right">
+                    <button id="btn" (click)="addToCart(p)"> Add to cart</button>
+                  </span>
+                  
+                </div>
+                
+              </ion-label>
+              
+            </ion-item>
+          </ion-card>
+
+
+          
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</div>
+</ion-content>

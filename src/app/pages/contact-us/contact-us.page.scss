@@ -1,0 +1,153 @@
+ion-content {
+ //   --ion-font-family: 'Rockwell';
+ 
+   
+  }
+
+
+
+
+
+  .ioncontent {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .title {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  
+  
+  h1 {
+    font-size: 20px;
+    color: black;
+  }
+  
+  
+  
+ 
+  
+  .header { 
+    color: rgb(255, 255, 255);
+  }
+  
+  ion-content{
+  
+    --ion-background-color:#192646;
+   // --background: url('/assets/background.jpg') no-repeat center/cover fixed;
+    
+  }
+
+  ion-toolbar{
+    --background: #c23543;
+}
+
+ion-buttons
+{
+    color:white;
+}
+
+ion-title
+{
+    color:white;
+
+}
+
+.menuButton
+{
+ color:white;
+}
+///////////
+
+
+
+ion-card{
+
+    margin-left: 0;
+    width: 100%;
+
+    top:-3.8%;
+ 
+
+
+
+      ion-card-header{
+        padding-top:10px;
+        padding-bottom: 5px;
+        background: #4d608a;
+
+        ion-card-title{
+            font-size:20px;
+        }
+        
+                     }
+
+  ion-icon {
+    font-size: 20px;
+    color:#e1b723;
+  }
+
+
+  ion-card-content{
+      padding-top: 10px;
+      background:#ebeae8;
+      color:black;
+    
+
+      ion-icon {
+        font-size: 25px;
+        color:  #2d2872;
+      }
+
+
+  }
+
+ 
+
+}
+
+.cardMap
+{
+top:-7%;
+z-index: 5;
+
+
+    ion-card-title, ion-icon{
+        font-size: 20px;
+        
+    
+    }
+
+    ion-icon{
+        color:#e1b723;
+    }
+
+    ion-card{
+       
+        margin:5px;
+    
+    }
+
+    ion-card-header{
+        padding-top:5px;
+        padding-bottom: 5px;
+        background: #4d608a;
+    }
+
+    .map
+    {
+    
+  
+    }
+
+}
+
+.store
+{position: absolute;
+    top:75%;
+
+
+}

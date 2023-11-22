@@ -1,0 +1,43 @@
+ion-content{
+    --ion-background-color: #445a8b;
+   }
+   .splash-animation{
+    display:grid;
+    align-items:center;
+    justify-content: center;
+    height:100%;
+    .splash-img{
+      -webkit-animation: scale-up-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: scale-up-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    @-webkit-keyframes scale-up-top {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+    }
+    @keyframes scale-up-top {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+    }
+
+   }
+   img{height: 170px; width: 170px; border:4px solid black; border-radius: 50%;}

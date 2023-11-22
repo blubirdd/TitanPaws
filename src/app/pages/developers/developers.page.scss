@@ -1,0 +1,92 @@
+ion-toolbar{
+    --background: #c23543;
+
+    .menuButton
+    {
+     color:white;
+    }
+   
+}
+
+ion-content {
+
+  }
+
+.details{
+    color:rgb(204, 204, 204);
+
+}  
+
+  img {
+    border-radius: 50%;
+    max-width: 35%;
+    position: relative;
+    padding: 4px;
+    border: 2px solid #e1b723;
+  }
+  .name
+  {
+      background-color: rgb(11, 7, 37);
+  }
+  
+
+  .course
+  {
+      letter-spacing: 1px;
+      margin-top: 5px;
+      color:#e1b723;
+  }
+
+  .ioncontent {
+    text-align: center;
+    padding: 10px;
+    
+  }
+  
+  .title {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+
+  
+  
+  
+  h1 {
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+  }
+  
+  
+  
+ 
+  
+  .header { 
+    color: rgb(255, 255, 255);
+  }
+  
+  ion-content{
+  
+    --ion-background-color:#313f5c;
+
+    
+  }
+
+  ion-card-content
+  {
+      //card content
+    background-color: rgb(16, 11, 49);
+    color: rgb(175,175,175);
+   
+  }
+
+
+
+  ion-icon {
+    font-size: 20px;
+    
+  }
+  
+
+   
